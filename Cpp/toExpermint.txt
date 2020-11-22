@@ -1,0 +1,27 @@
+Return a local variable's address.
+
+Overrun array bounds.
+
+Dereference an invalid pointer.
+
+Allocate enormous memory on heap that's spread across the code and never free() it.
+
+free() the same piece of memory more than once.
+
+Access the free()'d memory.
+
+Assume that you've an initialized stack/heap memory when it's not and deal with it.
+
+Smash the stack by stuffing a function with local variables of huge size.
+
+Do an infinite recursion causing stack overflow.
+
+Fiddle with low-level aspects of a function-calling mechanism including the argument passing, return address, on the call stack.
+
+Declare and use a pointer in the way it's not meant to be - declare it to be int * and use it as double *.
+
+Treat code pointers and data pointers as always of the same size and could be represented in a single manner - void *.
+
+Treat any integer type as capable of representing an address always correctly.
+
+Use %d or %x to print addresses
